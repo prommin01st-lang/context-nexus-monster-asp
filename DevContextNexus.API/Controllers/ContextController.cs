@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace DevContextNexus.API.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
     public class ContextController : ControllerBase
     {
