@@ -1,0 +1,8 @@
+{
+    "version": "1",
+    "name": "DevContextNexus API",
+    "type": "collection",
+    "ignore": [
+        ".git"
+    ]
+}

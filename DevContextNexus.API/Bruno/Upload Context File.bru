@@ -1,0 +1,27 @@
+meta {
+  name: Upload Context File
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/api/Context/upload
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  x-api-key: {{apiKey}}
+}
+
+body:multipart-form {
+  projectName: {{projectName}}
+  filePath: {{filePath}}
+  file: @file(F:\GitHubProject\Fixfac\docs\Employee_flow.drawio_0.png)
+}
+
+vars:pre-request {
+  apiKey: petanque-api-context-key-1498nn14012026
+  projectName: FixFac
+  filePath: FixFac/requirement.md
+}

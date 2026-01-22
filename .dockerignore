@@ -1,0 +1,13 @@
+**/.dockerignore
+**/.env
+**/.git
+**/.gitignore
+**/.vs
+**/.vscode
+**/bin
+**/obj
+**/Bruno
+**/README.md
+**/migration.md
+**/schema.md
+**/overview.md

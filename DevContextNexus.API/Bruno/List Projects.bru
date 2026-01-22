@@ -1,0 +1,19 @@
+meta {
+  name: List Projects
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/api/Context/projects
+  body: none
+  auth: none
+}
+
+headers {
+  x-api-key: {{apiKey}}
+}
+
+vars:pre-request {
+  apiKey: petanque-api-context-key-1498nn14012026
+}

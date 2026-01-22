@@ -1,0 +1,20 @@
+meta {
+  name: List Project Files
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/api/Context/{{projectName}}/files
+  body: none
+  auth: none
+}
+
+headers {
+  x-api-key: {{apiKey}}
+}
+
+vars:pre-request {
+  projectName: FixFac
+  apiKey: petanque-api-context-key-1498nn14012026
+}

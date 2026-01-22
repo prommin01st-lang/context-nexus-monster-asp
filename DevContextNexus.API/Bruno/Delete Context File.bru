@@ -1,0 +1,20 @@
+meta {
+  name: Delete Context File
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{baseUrl}}/api/Context/{{projectName}}/{{filePath}}
+  body: none
+  auth: none
+}
+
+headers {
+  x-api-key: {{apiKey}}
+}
+
+vars:pre-request {
+  projectName: FixFac
+  filePath: FixFac/requirement.md
+}

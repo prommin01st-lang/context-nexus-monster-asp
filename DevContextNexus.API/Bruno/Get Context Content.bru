@@ -1,0 +1,22 @@
+meta {
+  name: Get Context Content
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/api/Context/{{projectName}}/{{filePath}}
+  body: none
+  auth: none
+}
+
+headers {
+  x-api-key: {{apiKey}}
+}
+
+vars:pre-request {
+  folder_path: docs/requirements.md
+  apiKey: petanque-api-context-key-1498nn14012026
+  projectName: FixFac
+  filePath: FixFac/requirement.md
+}
